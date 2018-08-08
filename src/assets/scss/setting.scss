@@ -1,0 +1,108 @@
+/*
+* @Author: UEDHE
+* @Date:   2018-05-07 16:18:12
+* @Last Modified by:   hejianping
+* @Last Modified time: 2018-05-23 14:54:56
+*/
+//背景色
+$bg01											:rgba(0,0,0,.4);
+$bg02											:#f5f5f5;
+$bg03											:#fafafa;
+$bg04											:#ffffff;
+
+//辅助色
+$assist01 								:#ff9e05;
+$assist02 								:#ff7e00;
+$assist03 								:#09bb07;
+$assist04 								:#f12c20;
+$assist05 								:#fff0e5;
+
+//按钮色
+$btn01 										:#00ceb9;
+$btn01hover 							:#00b9a6;
+$btn01disable 						:#acf4ed;
+
+$btn02 										:#ff9e05;
+$btn02hover 							:#00b9a6;
+$btn02disable 						:#ffe7c1;
+
+$btn03 										:#ff7e00;
+$btn03hover 							:#e57100;
+$btn03disable 						:#ffe5cc;
+
+$btn04 										:#f12c20;
+$btn04hover 							:#d8281d;
+$btn04disable 						:#fcd5d2;
+
+$btn05 										:#f5f5f5;
+$btn06 										:#e5faf8;
+$btn07 										:#fafafa;
+$btn08 										:#fff;
+
+//字体颜色
+$fc01 										:#00ceb9;
+$fc02 										:#ff9e05;
+$fc03 										:#ff7e00;
+$fc04 										:#09bb07;
+$fc05 										:#f12c20;
+$fc06 										:#333;
+$fc07 										:#666;
+$fc08 										:#999;
+$fc09 										:#c8c8c8;
+$fc10 										:#fff;
+
+//分割线
+$bor01 										:#00ceb9;
+$bor02 										:#7fe6dc;
+$bor03 										:#b4b4b4;
+$bor04 										:#c8c8c8;
+$bor05 										:#d4d4d4;
+$bor06 										:#e2e2e2;
+$bor07 										:#ebebeb;
+
+//字体大小
+$f01 											:.2rem;
+$f02 											:.22rem;
+$f03 											:.24rem;
+$f04 											:.26rem;
+$f05 											:.28rem;
+$f06 											:.3rem;
+$f07 											:.32rem;
+$f08 											:.34rem;
+$f09 											:.36rem;
+$f10 											:.4rem;
+$f11 											:.46rem;
+
+
+$f20 											:$f01;
+$f22 											:$f02;
+$f24 											:$f03;
+$f26 											:$f04;
+$f28 											:$f05;
+$f30 											:$f06;
+$f32 											:$f07;
+$f34 											:$f08;
+$f36 											:$f09;
+$f40 											:$f10;
+$f46 											:$f11;
+
+
+@mixin ellipsis($w:auto) {
+  width: $w;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+
+/*多行文本溢出*/
+
+@mixin ellipsisLn($line) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

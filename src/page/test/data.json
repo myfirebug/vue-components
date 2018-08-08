@@ -1,0 +1,171 @@
+{
+  "responseTime": 1532594532200,
+  "message": "success",
+  "code": 0,
+  "datas": [
+    {
+      "wifi": "无线",
+      "acreage": "28",
+      "roomTypeImages": [
+        "http://file.geeker.com.cn/uploadfile/ptisp/dsfile/1531989246380/15786651.jpg"
+      ],
+      "minSellPrice": "100",
+      "products": [
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间301号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间302号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间303号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间304号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间305号"
+        }
+      ],
+      "window": "有",
+      "roomType": "豪华单间",
+      "bedType": "1.8m*1"
+    },
+    {
+      "wifi": "无线",
+      "acreage": "28",
+      "roomTypeImages": [
+        "http://file.geeker.com.cn/uploadfile/ptisp/dsfile/1531989246380/15786651.jpg"
+      ],
+      "minSellPrice": "100",
+      "products": [
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华单间301号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华标间302号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华标间303号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华标间304号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华标间305号"
+        }
+      ],
+      "window": "有",
+      "roomType": "豪华标间",
+      "bedType": "1.8m*1"
+    },
+    {
+      "wifi": "无线",
+      "acreage": "28",
+      "roomTypeImages": [
+        "http://file.geeker.com.cn/uploadfile/ptisp/dsfile/1531989246380/15786651.jpg"
+      ],
+      "minSellPrice": "100",
+      "products": [
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华三人间301号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华三人间302号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华三人间303号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华三人间304号"
+        },
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华三人间305号"
+        }
+      ],
+      "window": "有",
+      "roomType": "豪华三人间",
+      "bedType": "1.8m*1"
+    },
+    {
+      "wifi": "无线",
+      "acreage": "28",
+      "roomTypeImages": [
+        "http://file.geeker.com.cn/uploadfile/ptisp/dsfile/1531989246380/15786651.jpg"
+      ],
+      "minSellPrice": "100",
+      "products": [
+        {
+          "marketPrice": "100",
+          "wifi": "无线",
+          "dayPrice": "0.01",
+          "breakfast": "无",
+          "name": "哈巴河县友谊峰大酒店豪华情侣房666号"
+        }
+      ],
+      "window": "有",
+      "roomType": "豪华情侣房",
+      "bedType": "1.8m*1"
+    }
+  ]
+}
