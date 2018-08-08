@@ -8,9 +8,9 @@
 
 ## 必学知识
 
-[1、Vue.js](https://cn.vuejs.org/v2/guide/)
+<a href="https://cn.vuejs.org/v2/guide/"  target="_blank">1、Vue.js</a>
+<a href="https://router.vuejs.org/zh/"  target="_blank">2、vue-router</a>
+<a href="https://vuex.vuejs.org/zh/api/"  target="_blank">3、vueX</a>
 
-[2、vue-router](https://router.vuejs.org/zh/)
 
-[3、vueX](https://vuex.vuejs.org/zh/api/)
 
