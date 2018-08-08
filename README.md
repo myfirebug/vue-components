@@ -1,7 +1,7 @@
 # 1 文档地址
-[百度1](http://www.baidu.com/)
-# 2 事例地址
-
+[文档地址](http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home)
+# 2 DOME地址
+[DOME地址](http://s.ued.daqsoft.com/geekUI/api/demo/#/home)
 
 
 
