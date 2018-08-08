@@ -3,12 +3,16 @@
 
 # 特性
 1、25+ 个组件
-2、完善的在线文档
-3、详细的在线示例
-4、已成功跑完3个大型项目
-[在线文档](http://s.ued.daqsoft.com/geekUI/mobile/api/#/home)
 
-[在线示例](http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home)
+2、完善的在线文档
+
+3、详细的在线示例
+
+4、已成功跑完3个大型项目
+
+[在线文档http://s.ued.daqsoft.com/geekUI/mobile/api/#/home](http://s.ued.daqsoft.com/geekUI/mobile/api/#/home)
+
+[在线示例http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home](http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home)
 
 
 
