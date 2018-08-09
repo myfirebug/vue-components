@@ -2,8 +2,8 @@
   <div class="daq-switch">
     <div class="daq-switch-title" v-html="title"></div>
     <div class="daq-switch-list">
-      <label class="daq-switch-item" v-for="option in options" :key="option.value" :for="option.value"><span class="name">{{option.name}}</span>
-        <input class="value" type="checkbox" :id="option.value" :value="option.value" v-model="currentValue">
+      <label class="daq-switch-item" v-for="option in options" :key="option.value" :for="option.value  + random"><span class="name">{{option.name}}</span>
+        <input class="value" type="checkbox" :id="option.value  + random" :value="option.value" v-model="currentValue">
         <i class="checked"></i>
       </label>
     </div>
@@ -22,7 +22,8 @@ export default {
   },
   data () {
     return {
-      currentValue: this.value
+      currentValue: this.value,
+      random: parseInt(Math.random() * 1000000)
     }
   },
   watch: {
