@@ -22,7 +22,7 @@
 
 [在线示例http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home](http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home)
 
-![成都中科大旗软件有限公司移动端在线示例(https://dn-cnode.qbox.me/FgWwkMfe_MiqcYB5E6cOtxpU_Puo)
+![成都中科大旗软件有限公司移动端在线示例](https://dn-cnode.qbox.me/FgWwkMfe_MiqcYB5E6cOtxpU_Puo)
 
 
 
