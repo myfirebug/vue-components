@@ -4,7 +4,7 @@
 
 # 二维码
 
-![成都中科大旗软件有限公司移动端在线实例二维码](https://dn-cnode.qbox.me/FnajyU5A8aOpvqnMh8SwHc1GausJ "成都中科大旗软件有限公司移动端在线实例二维码")
+![成都中科大旗软件有限公司移动端在线实例二维码](https://dn-cnode.qbox.me/FnajyU5A8aOpvqnMh8SwHc1GausJ)
 
 
 # 特性
@@ -17,10 +17,10 @@
 4、已成功跑完3个大型项目
 
 [在线文档http://s.ued.daqsoft.com/geekUI/mobile/api/#/home](http://s.ued.daqsoft.com/geekUI/mobile/api/#/home)
-![成都中科大旗软件有限公司移动端在线文档](https://dn-cnode.qbox.me/FkE2OqJGfZwi1zkm_IlDruCijFJz "成都中科大旗软件有限公司移动端在线文档")
+![成都中科大旗软件有限公司移动端在线文档](https://dn-cnode.qbox.me/FkE2OqJGfZwi1zkm_IlDruCijFJz)
 
 [在线示例http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home](http://s.ued.daqsoft.com/geekUI/mobile/demo/#/home)
-![成都中科大旗软件有限公司移动端在线示例(https://dn-cnode.qbox.me/FgWwkMfe_MiqcYB5E6cOtxpU_Puo "成都中科大旗软件有限公司移动端在线示例")
+![成都中科大旗软件有限公司移动端在线示例(https://dn-cnode.qbox.me/FgWwkMfe_MiqcYB5E6cOtxpU_Puo)
 
 
 
