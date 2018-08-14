@@ -6,12 +6,14 @@
             <div class="sbus-topbox">
                 <div class="daq-search-wrap bus-inmypo">
                     <daq-badge size="mini"></daq-badge>
-                    <input style="background: none; border-radius: 0.06rem;" v-model="start.name" placeholder="我的位置" id="js_start"></div>
+                    <input style="background: none; border-radius: 0.06rem;" v-model="start.name" placeholder="我的位置"
+                           id="js_start" ref="start"></div>
                 <div class="daq-search-wrap bus-inend">
                     <daq-badge size="mini"></daq-badge>
-                    <input style="background: none; border-radius: 0.06rem;" placeholder="输入终点..."  v-model="end.name"  id="js_end"></div>
+                    <input style="background: none; border-radius: 0.06rem;" placeholder="输入终点..."
+                           v-model="end.name"  id="js_end" ref="end"></div>
             </div>
-            <div class="bus-searchbtn"><i class="icon-bus-transformation ued-mobile" @click="exchange">&#xe6c0;</i><span @click="search">搜索</span></div>
+            <div class="bus-searchbtn"><i class="icon-bus-transformation ued-mobile" @click="exchange">&#xe6c3;</i><span @click="search">搜索</span></div>
         </div>
         <ul class="bus-linelist">
             <li  v-for="(item, index) in recordList" :key="index">
@@ -38,7 +40,8 @@
     </div>
 </template>
 <script>
-import Toast from '../../../../components/toast'
+  import Toast from '../../../../components/toast'
+  import Dialog from '../../../../components/dialog'
 import localStorage from '../../../../util/localStorage.js'
 let map = new AMap.Map('containerMap')
 let t = null
@@ -143,6 +146,22 @@ export default {
         },
         // 保存搜索记录
         setBusQueryRecord () {
+          if (!this.start.name) {
+            /* eslint-disable no-new */
+            new Toast({
+              message: '请输入起始位置'
+            })
+            this.$refs.start.focus()
+            return
+          }
+          if (!this.end.name) {
+            /* eslint-disable no-new */
+            new Toast({
+              message: '请输入终点位置'
+            })
+            this.$refs.end.focus()
+            return
+          }
             let arr = localStorage.get('busQueryRecord') ? localStorage.get('busQueryRecord') : []
             let str = JSON.stringify(localStorage.get('busQueryRecord'))
             if (str.indexOf(this.start.name) === -1 || str.indexOf(this.end.name) === -1) {
@@ -167,8 +186,19 @@ export default {
         },
         // 清空记录
         clearBusQueryRecord () {
-            localStorage.set('busQueryRecord', '')
-            this.getBusQueryRecord()
+          let _this = this
+          /* eslint-disable no-new */
+            new Dialog({
+              title: '温馨提示',
+              content: '您确定要清空历史记录吗？',
+              comfirmValue: '确认',
+              cancelValue: '取消',
+              align: 'left',
+              comfirmFn () {
+                localStorage.set('busQueryRecord', '')
+                _this.getBusQueryRecord()
+              }
+            })
         },
         search () {
             this.setBusQueryRecord()
@@ -325,7 +355,7 @@ export default {
         text-align: center;
         i{
             color:white;
-            font-size:.24rem;
+            font-size:.28rem;
         }
         p{
             color:white;

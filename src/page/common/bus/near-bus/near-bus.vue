@@ -82,7 +82,7 @@ export default {
         >li{
             margin-right: .24rem;
             margin-bottom: .24rem;
-            padding:0 .15rem;
+            padding:0 .24rem;
             height:.6rem;
             background-color: #f5f5f5;
             line-height:.6rem;

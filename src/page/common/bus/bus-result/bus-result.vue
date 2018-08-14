@@ -27,7 +27,7 @@
                     </div>
                     <ul class="busline-li">
                         <li class="cli"  v-for="(d, i) in details.segments" :key="i" v-if="d.bus && d.bus.buslines && d.bus.buslines.length > 0">
-                            <i class="ued-mobile busline-i"></i>{{d.bus && d.bus.buslines && d.bus.buslines.length > 0 ? d.bus.buslines[0].name.split('(')[0] : ''}}<i class="ued-mobile icon-busline-ir"></i>
+                            <i class="ued-mobile busline-i">&#xe6bc;</i>{{d.bus && d.bus.buslines && d.bus.buslines.length > 0 ? d.bus.buslines[0].name.split('(')[0] : ''}}<i class="ued-mobile icon-busline-ir"></i>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@
                       <p class="walk">步行{{a.walking.distance && a.walking.distance.length > 3 ? (a.walking.distance /
                         1000).toFixed(1) + '公里' : (a.walking.distance ? a.walking.distance : 0) +
                         '米'}}&nbsp;&nbsp;({{a.walking.duration ? parseInt(a.walking.duration / 60) : 0}}分钟)</p>
-                        <div class="route"><i class="ued-mobile m-icon-bashi">&#xe6c2;</i>
+                        <div class="route"><i class="ued-mobile m-icon-bashi">&#xe6bc;</i>
                             <div class="right"><p class="up"><span>{{a.bus.buslines[0].departure_stop.name}}</span><i class="label ui-border-radius">上</i></p>
                                 <p class="road"><i>{{a.bus.buslines[0].name.split('(')[0]}}</i> <span class="direction">{{a.bus.buslines[0].name.split('--')[1].substring(0, a.bus.buslines[0].name.split('--')[1].length - 1)}}</span></p>
                                 <p class="way">{{a.bus.buslines[0].via_num}}站<i class="time">（{{parseInt(a.bus.buslines[0].duration / 60)}}分钟）</i></p>
@@ -103,23 +103,23 @@ export default {
         padding-left: .32rem;
         padding-right: .32rem;
         width:100%;
+        font-size:0;
         background-color: white;
         .title-box{
             position: relative;
             width:100%;
-            height:.36rem;
             .bug-time{
                 display:inline-block;
-                margin-right: .15rem;
-                padding-right:.15rem;
-                height:.36rem;
+                margin-right: .16rem;
+                padding-right:.16rem;
                 border-right: .02rem solid #d4d4d4;
                 font-size:.4rem;
-                line-height:.36rem;
+                line-height:1;
+                font-weight: bold;
             }
             .bux-long{
                 font-size:.32rem;
-                line-height:.36rem;
+                line-height:1;
             }
             i{
                 position: absolute;
@@ -144,21 +144,22 @@ export default {
         flex-wrap:wrap;
         li{
             position: relative;
-            padding: 0 .25rem;
+            padding: 0 .24rem;
             margin-right: .6rem;
             margin-bottom: .24rem;
             height:.6rem;
             background-color: #f5f5f5;
             line-height:.6rem;
             font-size:.26rem;
+            border-radius:.05rem;
             &.cli{
                 .icon-busline-ir{
                     display:inline-block;
                     position: absolute;
                     font-size:.18rem;
                     top:0;
-                    right:-.36rem;
-                    color:#d4d4d4;
+                    right:-.4rem;
+                    color:#cccc;
                 }
             }
             &:last-child{
@@ -167,15 +168,16 @@ export default {
                 }
             }
             .busline-i{
-                margin-right: .05rem;
+                margin-right: .08rem;
                 color:#00ceb9;
+                vertical-align:top;
             }
             .icon-busline-ir{
                 display:none;
                 position: absolute;
                 top:0;
                 right:-.36rem;
-                color:#d4d4d4;
+                color:#ccc;
             }
         }
     }
@@ -218,9 +220,9 @@ export default {
     }
     .busld-infobox{
         padding-top: .4rem;
-        padding-bottom: .2rem;
         padding-left: .32rem;
         background-color: white;
+        font-size: 0;
         .title{
             font-size:.4rem;
         }
@@ -232,15 +234,14 @@ export default {
                 margin-right: .15rem;
                 margin-top: .2rem;
                 padding-right: .1rem;
-                height:.36rem;
                 border-right: .02rem solid #d4d4d4;
                 font-size:.26rem;
-                line-height:.26rem;
+                line-height:1;
             }
             .bux-long{
                 color:#666;
                 font-size:.26rem;
-                line-height:.26rem;
+                line-height:1;
             }
         }
         .busline-li{
@@ -425,7 +426,7 @@ export default {
                     }
                 }
                 .down{
-                    padding-bottom: .28rem;
+                    padding-bottom: .16rem;
                     display: flex;
                     align-items: center;
                     font-size: .32rem;
@@ -472,7 +473,8 @@ export default {
                 transform: translateY(-50%);
                 width: .2rem;
                 height: 2.01rem;
-                background: url(../../../../assets/image/bus-detail-2.png) no-repeat 50%/cover;
+                background: url(../../../../assets/image/bus-detail-2.png) no-repeat;
+                background-size:100% 100%;
             }
         }
     }
