@@ -130,7 +130,6 @@ import Ajax from '../../../service'
 import CityPicker from '../../../components/cityPicker'
 import Toast from '../../../components/toast'
 import WeatherCanvas from './canvasDrop.js'
-let number = 0
 export default {
   data () {
     return {
@@ -190,14 +189,15 @@ export default {
           this.alarms = w.alarms
           this.aqi = w.aqi
           this.basic = w.basic
-          if (number === 0) {
-            this.regionName = w.basic.cnty
-          }
+
+          this.regionName = w.basic.name
+          this.value.provinceName = w.basic.province
+          this.value.cityName = w.basic.cnty
+
           this.daily_forecast = w.daily_forecast
           this.hourly_forecast = w.hourly_forecast
           this.suggestion = w.suggestion
           this.code = this.hourly_forecast[0].cond.code
-          number++
         } else {
           this.flag = false
           Toast({
@@ -212,6 +212,7 @@ export default {
         show: true,
         value: _this.value,
         callback (d) {
+          console.log(d)
           _this.value = d
           if (d.areaRegin) {
             _this.region = d.areaRegin
